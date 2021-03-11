@@ -1,3 +1,4 @@
+
 /*FONT USADA*/
 @font-face {
     font-family: 'Kollektif Regular';
@@ -32,27 +33,27 @@
 
 /*CONFIG GERAIS*/
 html {
-    font-size: 62.5%; /*Mudando a configuração padrão da FONT no documento html de 16px para 10px. Facilita calcular o Rem que agora vale 10px. Para voltar ao padrão retirar ou colocar 100%.*/
+    font-size: 62.5% !important; /*Mudando a configuração padrão da FONT no documento html de 16px para 10px. Facilita calcular o Rem que agora vale 10px. Para voltar ao padrão retirar ou colocar 100%.*/
 }
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
 }
 body {
-    background-color: black;
-    font-family: 'Montserrat Light', sans-serif;
+    background-color: black !important;
+    font-family: 'Montserrat Light', sans-serif !important;
 }
 h1,
 h2,
 h4,
 h5 {
-    font-family: 'Kollektif Bold', sans-serif;
+    font-family: 'Kollektif Bold', sans-serif !important;
 }
 h1,
 h2,
 h3 {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 h2,
 h4,
@@ -61,44 +62,44 @@ ul {
     align-self: flex-start !important;
 }
 h2 {        
-    letter-spacing: 0.2rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    letter-spacing: 0.2rem !important;
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 h4 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
 }
 h5 {
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
+    font-size: 1.7rem !important;
+    font-weight: 400 !important;
+    margin-bottom: 0.5rem !important;
 }
 ul {
-    font-size: 1.6rem;
-    margin-left: 2rem;
+    font-size: 1.6rem !important;
+    margin-left: 2rem !important;
 }
 li {
-    line-height: 2.3rem;
+    line-height: 2.3rem !important;
 }
 
 /*INÍCIO*/
 .area--geral {
-    max-width: 144rem;
-    width: 100%;
-    background-color: white;
-    margin: auto;
+    max-width: 144rem !important;
+    width: 100% !important;
+    background-color: white !important;
+    margin: auto !important;
 }
 .area--conteudo {
-    max-width: 128rem;
-    width: 100%;
-    margin: auto;
-    display: grid;
+    max-width: 128rem !important;
+    width: 100% !important;
+    margin: auto !important;
+    display: grid !important;
     grid-template-areas: 
         "perfil experiencia"
         "resumo experiencia"
@@ -106,14 +107,14 @@ li {
         "trabalhar apresentacao"
         "certificados certificados"
         "certificados certificados"    
-    ;
+        !important;
 }
 .container--conteudo {
-    display: flex;    
-    flex-direction: column;
-    max-width: 50rem;
-    align-items: center;
-    margin: auto;
+    display: flex !important;    
+    flex-direction: column !important;
+    max-width: 50rem !important;
+    align-items: center !important;
+    margin: auto !important;
 }
 
 /*PERFIL*/
@@ -124,13 +125,13 @@ li {
 }
 .perfil--conteudo img {
     border-radius: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem !important;
 }
 .perfil--conteudo h1 {
     font-size: 5rem;        
     letter-spacing: 0.5rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 .perfil--conteudo h3 {
     font-size: 2rem;
@@ -152,7 +153,7 @@ li {
 .aptidoes {
     grid-area: aptidoes;    
     border-bottom: 0.2rem solid black;
-    padding: 5rem 0rem;
+    padding: 5rem 0rem !important;
 }
 
 /*TRABALHAR*/
@@ -163,7 +164,7 @@ li {
 .trabalhar--conteudo span {
     align-self: flex-start;
     font-size: 1.6rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem !important;
 }
 
 /*EXPERIÊNCIA*/
@@ -171,7 +172,7 @@ li {
     grid-area: experiencia;
     border-bottom: 0.2rem solid black;
     border-left: 0.4rem solid black;
-    padding: 5rem 0rem;
+    padding: 5rem 0rem !important;
 }
 
 /*FORMAÇÃO*/
@@ -179,94 +180,50 @@ li {
     grid-area: formacao;
     border-bottom: 0.2rem solid black;
     border-left: 0.4rem solid black;
-    padding: 5rem 0rem;
+    padding: 5rem 0rem !important;
 }
 
 /*APRESENTAÇÃO*/
 .apresentacao {
     grid-area: apresentacao;
     border-left: 0.4rem solid black;
-    padding: 5rem 0rem;
+    padding: 5rem 0rem !important;
 }
 .apresentacao img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 /*CERTIFICADOS*/
 .certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: certificados;
     border-top: 3rem solid black;
     border-radius: 10%;
-    margin-top: 0.001rem;
+    margin-top: 0.001rem !important;
 }
 .certificados--conteudo {
-    max-width: unset;
-    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .certificados h2 {
     padding-top: 3rem;
     align-self: center !important;
 }
-.certificados button {
-    width: 10rem;
-    height: 10rem;
-}
-.controls--slide--area {
-    display: flex;
-    height: 100%;
-    width: inherit;
-    align-items: center;
-}
-.control--slide {
-    display: flex;
-    width: inherit;
-    justify-content: space-between;
-    align-content: center;
-    position: absolute;
-    z-index: 999;
-}
-.control--slide img {
-    cursor: pointer;
-}
-.control--slide img:hover {
-   background: rgb(43,140,220);
-   background: linear-gradient(#c5e9ff, #45abff);
-   border-radius: 50%;
-   box-shadow: 2px 2px 0px #363636;
-}
-.img--before{
-    transform: rotate(180deg);
-}
-.control--images {
-    width: inherit;
-    height: inherit;
-}
-
-/*SLIDERS*/
-.slider {
-    width: 102.4rem;
-    margin-top: 3rem;
-    height: 76.8rem;
-}
-.slider--item {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    max-height: 76.8rem;    
-}
-.zIndex {
-    z-index: 99;
-}
 
 /*RESPONSIVIDADE*/
 @media (min-width: 768px) and (max-width: 1279px) {
     .area--geral {
-        width: 100%;
-        overflow: hidden;
+        width: 100% !important;
+        overflow: hidden !important;
     }
     .area--conteudo {
-        width: 100%;
+        width: 100% !important;
         grid-template-areas: 
             "perfil"
             "resumo"
@@ -275,60 +232,51 @@ li {
             "formacao"
             "apresentacao"
             "trabalhar"
-            "certificados";  
+            "certificados" !important;  
         
     }
     .container--conteudo {
-        max-width: 100%;
+        max-width: 100% !important;
     }
     .perfil {
         align-content: center;
         justify-content: center;
-        padding: 5rem 0rem;
+        padding: 5rem 0rem !important;
     }
     .resumo {
-        padding: 5rem 5rem; 
+        padding: 5rem 5rem !important; 
     }
     .aptidoes {
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .experiencia {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .formacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .apresentacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
         border-bottom: 0.2rem solid black;
     }
     .apresentacao img {
         width: 100%;
     }
     .vamos-trabalhar {
-        padding: 5rem 5rem;
-    }
-
-    .slider {
-        width: 100%;
-        height: 80rem;
-    }
-    .slider--item {
-        height: inherit;
-        max-height: 80rem;
+        padding: 5rem 5rem !important;
     }
 }
 
 @media (min-width: 551px) and (max-width: 767px) {
     .area--geral {
-        width: 100%;
-        overflow: hidden;
+        width: 100% !important;
+        overflow: hidden !important;
     }
     .area--conteudo {
-        width: 100%;
+        width: 100% !important;
         grid-template-areas: 
             "perfil"
             "resumo"
@@ -337,57 +285,48 @@ li {
             "formacao"
             "apresentacao"
             "trabalhar"
-            "certificados";  
+            "certificados" !important;  
         
     }
     .container--conteudo {
-        max-width: 100%;
+        max-width: 100% !important;
     }
     .perfil {
         align-content: center;
         justify-content: center;
-        padding: 5rem 0rem;
+        padding: 5rem 0rem !important;
     }
     .resumo {
-        padding: 5rem 5rem; 
+        padding: 5rem 5rem !important; 
     }
     .aptidoes {
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .experiencia {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .formacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .apresentacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
         border-bottom: 0.2rem solid black;
     }
     .apresentacao img {
-        width: 100%;
+        width: 100% !important;
     }
     .vamos-trabalhar {
-        padding: 5rem 5rem;
-    }
-
-    .slider {
-        width: 80%;
-        height: 40rem;
-    }
-    .slider--item {
-        height: inherit;
-        max-height: 40rem;
+        padding: 5rem 5rem !important;
     }
 }
 
 @media (max-width: 550px) {
     .area--geral {
-        width: 100%;
-        overflow: hidden;
+        width: 100% !important;
+        overflow: hidden !important;
     }
     .area--conteudo {
         width: 100%;
@@ -399,16 +338,16 @@ li {
             "formacao"
             "apresentacao"
             "trabalhar"
-            "certificados";  
+            "certificados" !important;  
         
     }
     .container--conteudo {
-        max-width: 100%;
+        max-width: 100% !important;
     }
     .perfil {
         align-content: center;
         justify-content: center;
-        padding: 5rem 0rem;
+        padding: 5rem 0rem !important;
     }
     .perfil--conteudo img {
         width: 16rem;
@@ -420,40 +359,28 @@ li {
         font-size: 1.5rem;
     }
     .resumo {
-        padding: 5rem 5rem; 
+        padding: 5rem 5rem !important; 
     }
     .aptidoes {
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .experiencia {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .formacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
     }
     .apresentacao {
         border-left: unset;
-        padding: 5rem 5rem;
+        padding: 5rem 5rem !important;
         border-bottom: 0.2rem solid black;
     }
     .apresentacao img {
         width: 100%;
     }
     .vamos-trabalhar {
-        padding: 5rem 5rem;
-    }
-
-    .slider {
-        width: 80%;
-        height: 20rem;
-    }
-    .slider--item {
-        height: inherit;
-        max-height: 20rem;
-    }
-    .control--slide img {
-        width: 3rem;
+        padding: 5rem 5rem !important;
     }
 }
